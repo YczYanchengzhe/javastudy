@@ -1,0 +1,19 @@
+# DataSource Config
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://aaa123:53286/aaa?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    username: aaa
+    password: aaa
+  # 指定非web方式启动
+  main:
+    web-application-type: none
+redis:
+  # 主从配置
+  host: 10.126.102.149
+  port: 6379
+  # 集群配置
+  nodes:
+    - aaa:50061
+    #    - test-teg-spat-rc05.rdb.58dns.org:50062
+    - aaa:50063
